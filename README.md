@@ -7,5 +7,5 @@ Instructions:
 1. `sudo apt install xdotool`
 1. `aseqdump -l`; replace `Scarlett` with name of your MIDI device
 1. Replace mapping in case list with desired mapping
-1. `sudo cp midi2key_daemon.sh /etc/init.d/midi2key`
-1. `sudo update-rc.d midi2key defaults`
+1. `sudo cp midi2key_daemon.sh /etc/cron.d/midi2key`
+1. `sudo crontab -e`; add the line `@reboot /etc/cron.d/midi2key &` to the end

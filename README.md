@@ -1,5 +1,7 @@
 Daemon to map MIDI input to keyboard strokes
 
+Currently hardcoded to map piano sustain pedal to Zoom push-to-talk (Alt+A)
+
 Instructions:
 
 1. `sudo apt install xdotool
